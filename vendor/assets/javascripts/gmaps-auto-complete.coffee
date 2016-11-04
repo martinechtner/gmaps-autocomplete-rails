@@ -259,7 +259,6 @@ class GmapsCompleterDefaultAssist
   autoCompleteCallback: (results, status) ->
     $.map(results, (item) ->
       uiAddress = item.formatted_address.replace ", " + self.country, ''
-      # var uiAddress = item.formatted_address;
       {
         label: uiAddress # appears in dropdown box
         value: uiAddress # inserted into input element when selected
